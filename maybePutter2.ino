@@ -1,14 +1,15 @@
+const int buttonPin = 2;
+const int motorPin = 13;
+boolean buttonPressed = false;
+int pulseStart = 0;
+const int pulseLength = 3;
+const int pulsePower = 1.55;
+unsigned long currentTime = 0;
+unsigned long pressedTime = 0;
+boolean firstTime = true;
+
 void setup() {
   // put your setup code here, to run once:
-  const int buttonPin = 2;
-  const int motorPin = 13;
-  boolean buttonPressed = false;
-  int pulseStart = 0;
-  const int pulseLength = 3;
-  const int pulsePower = 1.55;
-  unsigned long currentTime = 0;
-  unsigned long pressedTime = 0;
-  boolean firstTime = true;
 }
 
 void loop() {
