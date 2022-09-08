@@ -14,14 +14,16 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  //update current time
   currentTime = millis();
+  //check if button is pressed and reset initial press state is not
   if(digitalRead(buttonPin) == HIGH) {
     buttonPressed = true;
   } else {
     buttonPressed = false;
     firstTime = true;
   }
-
+  //if button is currently pressed turn on motor until let go then stop motor power
   if(buttonPressed) {
     if(firstTime) {
       pulseStart = currentTime;
